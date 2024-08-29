@@ -1,0 +1,192 @@
+:root {
+    --oscuro: #17202A;
+    --claro: #FFFFFF;
+    --texto: #6196F1;
+}
+
+/*Globales*/
+body {
+    margin: 1rem auto;
+    max-width: 80rem;
+    background-color: var(--oscuro);
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--texto);
+}
+
+p {
+    color: var(--claro);
+}
+
+
+/*Especificos*/
+
+.tituloPrincipal {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.navBar {
+    background-color: var(--texto);
+    padding: 15px;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar ul li {
+    display: inline;
+}
+
+.navBar ul li a {
+    padding: 10px 20px;
+    /* Espaciado interno de los enlaces */
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Quita la subrayado predeterminado */
+    font-family: sans-serif;
+
+    font-size: 1.5rem;
+
+}
+
+.navBar ul li a:hover {
+    background-color: #555;
+    border-radius: 10%;
+    /* Cambia el color de fondo al pasar el mouse */
+}
+
+.contenidoHero {
+    padding: 3rem;
+    background-image: url(img/AdobeStock_143854577.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 2rem;
+}
+
+@media (min-width:768px) {
+    .contenidoHero {
+        padding: 10rem;
+        background-image: url(img/AdobeStock_143854577.jpeg);
+        background-size: 100%;
+        background-attachment: fixed;
+        margin-top: 2rem;
+    }
+}
+
+.contenidoHeroTexto {
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-size: 1.5rem;
+    background-color: var(--oscuro);
+    padding: 2rem;
+}
+
+@media (min-width:768px) {
+    .contenidoHeroTexto {
+        font-family: "Ubuntu Sans Mono", monospace;
+        font-size: 1.5rem;
+        background-color: var(--oscuro);
+        padding: 5rem;
+    }
+}
+
+
+.contenedorPrincipal h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 17rem;
+}
+
+.sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width : 768px) {
+    .sobreMi {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 2rem;
+    }
+}
+
+.sobreMi img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+@media(min-width: 768px) {
+    .sobreMi img {
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.textoSobreMi {
+    font-size: 1.5rem;
+    margin: 1rem 3rem;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .habilidades {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.habilidad {
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.naranja {
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.azul {
+    background-color: blue;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.amarillo {
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.socalo {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 17rem;
+}
